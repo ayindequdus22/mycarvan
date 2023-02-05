@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carvan</title>
     <link rel="stylesheet" href="./../style/style.css">
-    <link rel="stylesheet" href="/Poppins-Regular.ttf"> 
-       <link rel="stylesheet" href="/fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
-    <script src="/jquery.js"></script>
+    <!-- <link  href="../../Poppins-Regular.ttf">  -->
+    <script src="../script/jquery.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 <body>
+    <div class="topCar">
+        <img src="../img/carant (1).jpg" alt="">
+    </div>
    <nav class="nav">
     <a href="#">Carvan</a>
 <div class="LinkContainer">
-     <a href="" class="active">Home</a>
+     <a href="#" class="active homeLink">Home</a>
      <a href="./about.html">About Us</a>
-        <a href="">Brands</a>
-        <a href="">Range of Cars</a>
-        <a href="">PreOwned Cars</a>
-        <a href="">Contact Us</a>
+        <a href="#range" class="brandLink">Brands</a>
+        <a href="" class="rangeLink">Range of Cars</a>
+        <a href="" class="ownedCarLink">PreOwned Cars</a>
+        <a href="./Contact.html" class="contactLink">Contact Us</a>
 </div>
    <div class="icons">
 <div class="fa fa-search"></div>
@@ -39,76 +42,94 @@
 <button class="btn">Explore More</button>
 </div>
 <div class="image">
-    <img src="/img/banner/car (1).png" alt="Benz car">
+    <img src="../img/banner/car (1).png" alt="Benz car">
 </div>
 </div>    
 
     </section>
   <!-- brands -->
-    <section class="range">
-        <h2>Our Brands</h2>
-        <div class="buttons">
-            <button class="btnfilter btn active">Cars</button>
-            <button class="btnfilter btn">Sedan</button>
-            <button class="btnfilter btn">Van</button>
-            <button class="btnfilter btn">Jeeps</button>
-            <button class="btnfilter btn">Lorry</button>
-        </div>
-        <div class="RangeCars">
-            <div class="rangeCar">
+    <section class="preOwned" id="range">
+        <h2>PreOwnedCars</h2>
+        <div class="preOwnedCars">
+            <div class="preOwnedCar">
                 <div class="img">
-                    <img src="../img/ranges/car (1).jpg" alt="rangingCars">
+                    <img src="../img/cars/brandCars (1).jpg" alt="rangingCars">
                 </div>
                 <div class="details">
-                    <button class="btn"></button>
+                    <p>Ca</p>
+                    <button class="btn">Buy Now</button>
                 </div>
             </div>
-            <div class="rangeCar">
+            <div class="preOwnedCar">
                 <div class="img">
-                    <img src="../img/ranges/car (2).jpg" alt="rangingCars">
+                   <img src="../img/cars/brandCars (2).jpg" alt="rangingCars"> 
                 </div>
                 <div class="details">
-                    <button class="btn"></button>
+                    <button class="btn">Buy Now</button>
                 </div>
             </div>
-            <div class="rangeCar">
+            <div class="preOwnedCar">
                 <div class="img">
-                    <img src="../img/ranges/car (3).jpg" alt="rangingCars">
+                    <img src="../img/cars/brandCars (3).jpg" alt="rangingCars">
                 </div>
                 <div class="details">
-                    <button class="btn"></button>
+                    <button class="btn">Buy Now</button>
                 </div>
             </div>
-            <div class="rangeCar">
+            <div class="preOwnedCar">
                 <div class="img">
-                    <img src="../img/ranges/car (4).jpg" alt="rangingCars">
+                    <img src="../img/cars/brandCars (4).jpg" alt="rangingCars">
                 </div>
                 <div class="details">
-                    <button class="btn"></button>
+                    <button class="btn">Buy Now</button>
                 </div>
             </div>
-            <div class="rangeCar">
+            <div class="preOwnedCar">
                 <div class="img">
-                    <img src="../img/ranges/car (5).jpg" alt="rangingCars">
+                    <img src="../img/cars/brandCars (5).jpg" alt="rangingCars">
                 </div>
                 <div class="details">
-                    <button class="btn"></button>
+                    <button class="btn">Buy Now</button>
                 </div>
             </div>
-                <div class="rangeCar">
+                <div class="preOwnedCar">
                     <div class="img">
-                        <img src="../img/ranges/car (6).jpg" alt="rangingCars">
+                        <img src="../img/cars/img-2.jpg" alt="rangingCars">
                     </div>
                     <div class="details">
-                        <button class="btn"></button>
+                        <button class="btn">Buy Now</button>
                     </div>
                 </div>
-                <div class="rangeCar">
+                <div class="preOwnedCar">
                     <div class="img">
-                        <img src="../img/ranges/car (7).jpg" alt="rangingCars">
+                        <img src="../img/cars/brandCars (7).jpg" alt="rangingCars">
                     </div>
                     <div class="details">
-                        <button class="btn"></button>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="preOwnedCar">
+                    <div class="img">
+                        <img src="../img/cars/brandCars (8).jpg" alt="rangingCars">
+                    </div>
+                    <div class="details">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="preOwnedCar">
+                    <div class="img">
+                        <img src="../img/cars/brandCars (9).jpg" alt="rangingCars">
+                    </div>
+                    <div class="details">
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="preOwnedCar">
+                    <div class="img">
+                        <img src="../img/cars/car-1.jpg" alt="rangingCars">
+                    </div>
+                    <div class="details">
+                        <button class="btn">Buy Now</button>
                     </div>
                 </div>
         </div>
@@ -117,59 +138,20 @@
 
 
 
-
     
-    <footer class="footer" id="footer">
-        <div class="footer-container">
-          <div class="footer-div main-div">
-            <h2><i class="fa fa-car-alt"></i> Carvan</h2>
-            <p class="title">The World's most Trusted Automotive Site</p>
-            <p class="Lorem1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elite dolore.
-              Minima nam aliquid ialiquid id libertas!
-            </p>
-            <a href="" class="social-link"
-              ><i class="fas fa-map-marker-alt"></i>1213, Lang-Ford driveWay ,
-              California, United States.</a
-            >
-            <br />
-            <div class="socials">
-              <a href="" class="social-links"><i class="fab fa-twitter"></i></a>
-              <a href="" class="social-links"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="" class="social-links"><i class="fab fa-instagram"></i></a>
-              <a href="" class="social-links"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-  
-          <div class="footer-div info-div grid-1">
-            <h2>Info Links</h2>
-            <a href="" class="link_">Home</a>
-            <a href="" class="link_">Products</a>
-            <a href="" class="link_">About Us</a>
-            <a href="" class="link_">Contact</a>
-            <a href="" class="link_">Services</a>
-          </div>
-  
-          <div class="footer-div useful-div grid-2">
-            <h2>Useful Links</h2>
-            <a href="" class="link_">Privacy Policy</a>
-            <a href="" class="link_">Terms & Conditions</a>
-            <a href="" class="link_">Support </a>
-          </div>
-  
-          <div class="footer-div contact-div grid-3">
-            <h2>Contact Us</h2>
-            <a href=""><i class="fa fa-envelope"></i> info@Carvan.com</a>
-            <a href=""><i class="fa fa-phone"></i> +1 (301) 3 234547</a>
-            <button>Subscribe For More In...</button>
-          </div>
-        </div>
-      </footer>
-  
+ 
     <script src="./../script/script.js"></script>
+    <script>
+        $(window).scroll(function(){
+      if($(window).scrollTop() > 550){
+$('.ownedCarLink').addClass('active').siblings().removeClass('active')
+      }
+      else{
+        $('.ownedCarLink').removeClass('active')
+        $('.homeLink').addClass('active')
+
+      }
+    })
+    </script> 
 </body>
 </html>
