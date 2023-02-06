@@ -19,7 +19,7 @@
         right: 2rem;
        }
        .topCar img{
-      
+        height: 15rem;width: 10rem;
        }
   :root{
     --main-color:
@@ -458,58 +458,49 @@ font-size: 1.9rem;
 
 
 /* coming soon */
-.coming-soon{
+.comingSoonContainer .coming-soon{
 padding: 2rem 6%;
+display: flex;
+gap: 2%;
 }
-.coming-soon h3{
+.comingSoonContainer h3{
   text-align: center;
 }
+.coming-soon .soonCar{
+  flex:1 1 45%;
+}
+.coming-soon .soonCar img{
+  width: 100%;
+  height: 40rem;
+  object-fit: scale-down;
+ animation: slideInRight 1s linear 1s backwards;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.coming-soon .clock{
+  flex: 1 1 53%;
+  display: flex;gap: 2rem;
+  flex-direction: column;align-items: center;justify-content: center;
+}
+.coming-soon .clock .timing{
+  display: flex;flex-wrap: wrap;
+  align-items: center;
+  gap:1rem 2rem ;
+  justify-content: center;
+}
+.coming-soon .clock .timing .box{
+  flex-direction: column;
+  display: flex;justify-content: center;align-items: center;
+  height: 10rem;
+  width: 10rem;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  border-radius: 50%;
+}
+.coming-soon .clock .timing .box span{
+  color:var(--main-color);
+  font-size: 1.9rem;
+  padding: .5rem 0;text-transform: capitalize;
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -520,82 +511,6 @@ padding: 2rem 6%;
 
 
   /* end of footer */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
