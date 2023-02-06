@@ -336,7 +336,6 @@ text-align: center;
   gap:  5rem 1.5rem;
 }
 .aboutEmployeees .aboutEnginnerContainer .aboutEngineer .content{
-/* display: flex;flex-direction: column; */
 text-align: center;
 padding: 1rem 0 1.5rem;
 }
@@ -402,8 +401,11 @@ margin: 1rem 1rem;cursor: pointer;
 /* contact page */
 .Contactcontainer{
   height: 90vh;
+  width: 100%;
   position: relative;
-  overflow: hidden;
+  align-items: center;
+  display: flex;overflow: hidden;
+  justify-content: center;
 }
 .Contactcontainer .contactImage{
 position: relative;
@@ -416,19 +418,24 @@ width: inherit;
 background: rgb(0, 0, 0,.7);
 }
 .Contactcontainer .contactImage{
-    height: inherit;width: 100%;
+    height: inherit;
+    width: 100%;
 }
 .Contactcontainer .contactImage img{ 
 object-position: center;
-height: inherit;object-fit: cover;
+height: inherit;
+object-fit: cover;
 width: 100%;
 }
 .Contactcontainer .content{
   position: absolute;
-  top: 30%;
   display: flex;
+  gap: 2rem;
+  padding: 1rem;
   justify-content: center !important;
-  width: 100%; 
+box-shadow: 0 0 8px rgba(255, 255, 255, 0.904);
+border-radius: 1rem;
+  background: rgba(255,255,255,.9);
 }
 .Contactcontainer .content form > *{
   margin: 1rem 0;
@@ -438,8 +445,14 @@ display: flex;
 gap: 1rem;
 }
 .Contactcontainer .content form > * input
-{padding: 1rem;
+{
+  padding: 1rem;
+  border: none;
 border-radius: .4rem;
+}
+.Contactcontainer .content form .contactFlex input{
+  width: 25rem;
+  font-size: 1.7rem;
 }
 .Contactcontainer .content form .mail input{
 width: 100%;
@@ -452,10 +465,15 @@ width: 100%;
   padding: 1rem;
 font-size: 1.9rem;
   height: 20rem;
-  display: block;border-radius: .4rem;
+  display: block;
+  border-radius: .4rem;
   width: 100%;
 }
-
+.Contactcontainer .content .map iframe{
+width: 50rem;
+height: 40rem;
+border-radius: 1rem;
+} 
 
 /* coming soon */
 .comingSoonContainer .coming-soon{
@@ -479,7 +497,9 @@ gap: 2%;
 .coming-soon .clock{
   flex: 1 1 53%;
   display: flex;gap: 2rem;
-  flex-direction: column;align-items: center;justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .coming-soon .clock .timing{
   display: flex;flex-wrap: wrap;
@@ -489,7 +509,9 @@ gap: 2%;
 }
 .coming-soon .clock .timing .box{
   flex-direction: column;
-  display: flex;justify-content: center;align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 10rem;
   width: 10rem;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
@@ -498,7 +520,8 @@ gap: 2%;
 .coming-soon .clock .timing .box span{
   color:var(--main-color);
   font-size: 1.9rem;
-  padding: .5rem 0;text-transform: capitalize;
+  padding: .5rem 0;
+  text-transform: capitalize;
  
 }
 
@@ -519,7 +542,7 @@ gap: 2%;
 
  /* mdqs */
 
- @media (max-width:1070px) {
+ @media (max-width:1075px) {
  nav .LinkContainer a{
         font-size: 1.6rem;
     }
@@ -533,6 +556,17 @@ gap: 2%;
 .homeHero .image img{
   height: 60vh;
   /* object-fit:contain; */
+}
+.Contactcontainer .content{
+  flex-direction: column;
+}
+.Contactcontainer .content .map iframe{
+height: 30rem;
+border-radius: 1rem;
+}
+
+.Contactcontainer{
+  height: 100vh;
 }
 } 
 
@@ -640,8 +674,16 @@ color: var(--main-color);
       width: 92%;
       height: 35vh;
       top: 15rem;
-      justify-content: center;align-items: start;
+      justify-content: center;
+      align-items: start;
 border-radius: 2rem;
 padding:0 2rem 0 3rem;
     }
+    .Contactcontainer .content form .contactFlex input{
+      width: 20rem;
+      font-size: 1.7rem;
+    }
+    .Contactcontainer .content .map iframe{
+      width: 40rem;
+      } 
   }
