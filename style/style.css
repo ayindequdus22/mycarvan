@@ -155,11 +155,10 @@ nav .icons > div.fa-bars{
 }
 /* homeHero */
 .homeHero{
-  background-color: #eaf5ff;
 padding: 2rem 6%;
   display: flex;
 width: 100%;
-/* height: 80vh; */
+  background-color: #eaf5ff;
 overflow: hidden;
 justify-content: center;
 align-items: center;
@@ -224,41 +223,7 @@ align-items: center;
   object-fit:scale-down;
   object-position: center;
 }
-/* range */
-  section.preOwned{
-    padding: 4rem 6% 2rem;
-  }
-  section.preOwned h2{
-    text-align: center;
-  }
-  
-  .preOwned  .preOwnedCars{
-    display: flex;
-    padding: 2rem 0 0;
-    flex-wrap: wrap;
-    gap: 2rem 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-  .preOwned  .preOwnedCars .preOwnedCar .btn{
-    padding: .5rem 2rem;
-    border-radius: .5rem;
-  }
-  .preOwned  .preOwnedCars .preOwnedCar{
-    box-shadow: 0 0 8px rgba(0,0,0,.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .preOwned  .preOwnedCars .preOwnedCar img{
-    height: 20rem;
-    padding: 1rem;
-    width: 27rem;
 
-    object-position: center;
-  }
-
-  /* end of brand */
 /* about US */
 .aboutMain{
   position: relative;
@@ -291,12 +256,13 @@ align-items: center;
 .aboutMain .content{
   position: absolute;
   top: 10rem;
-  /* background:hsla(0, 0%, 100%, 0.8); */
   background: rgb(24, 24, 24,.4);
 margin: 0 4%;
 width: 50%;
-display: flex;flex-direction: column;
-justify-content: center;align-items: start;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
 border-radius: 2rem;
 padding:4rem 2rem 4rem 3rem;
 z-index: 100;
@@ -310,7 +276,8 @@ z-index: 100;
   color: white;
 }
 .aboutMain .content p a:hover{
-  color: var(--main-color);transition: all 1s ease;
+  color: var(--main-color);
+  transition: all 1s ease;
 }
 .aboutMain .content h2{ 
   color:white;
@@ -380,14 +347,17 @@ bottom: 120%;
 display: flex;
 align-items: center;
 justify-content: center;
-height: inherit;width: 100%;
+height: inherit;
+width: 100%;
 transition: all 1s ease;
-flex-direction: column;color:white;
+flex-direction: column;
+color:white;
 z-index: 100;
 }
 .aboutEmployeees .aboutEnginnerContainer .aboutEngineer .imageSocials .imageAnimate .icons .fab{
   font-size: 4rem;
-margin: 1rem 1rem;cursor: pointer;
+margin: 1rem 1rem;
+cursor: pointer;
 }
 
 .aboutEmployeees .aboutEnginnerContainer .aboutEngineer .imageSocials .imageAnimate .icons .fab:hover{
@@ -464,6 +434,7 @@ width: 100%;
   resize: none;
   padding: 1rem;
 font-size: 1.9rem;
+border:none;
   height: 20rem;
   display: block;
   border-radius: .4rem;
@@ -491,7 +462,6 @@ gap: 2%;
   width: 100%;
   height: 40rem;
   object-fit: scale-down;
- animation: slideInRight 1s linear 1s backwards;
 }
 
 .coming-soon .clock{
@@ -525,13 +495,314 @@ gap: 2%;
  
 }
 
+/*  */
+/* preowned cars */
+#preownedCars{
+ /* background-color: rgb(234, 250, 255); */
+ background-color: #eaf5ff;
+padding: 2rem 6%;
+  display: flex;
+width: 100%;
+overflow: hidden;
+justify-content: center;
+align-items: center;
+}
+#preownedCars .content{
+  flex: 1 1 55%;
+
+}
+#preownedCars .image{
+  flex: 1 1 45%;
+}
+#preownedCars .image img{
+  height: 70vh;
+  width: 100%;
+  object-fit:scale-down;
+  object-position: center;
+}
+#preownedCars .content p a:hover{
+  color: var(--main-color) !important;
+  transition: all 1s ease;
+}
+#preownedCars .content p a:nth-child(2){
+color: #00000052;
+}
+#preownedCars .content p:nth-child(2){
+  text-transform: capitalize;
+}
+#preownedCars .content h1{
+  text-transform: capitalize;
+  text-shadow: 0px 0px 8px rgb(0, 0, 0,.5);
+  padding:1rem 0 1.5rem;
+  }
+  #preownedCars .image img{
+    animation: slideInUp 2s ease   infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+  }
+  @keyframes slideInUp {
+    0%{
+transform: translateX(0);
+    }
+   
+    80%{
+      transform: translateY(1.5rem);
+    }
+  }
+
+  section.preOwned{
+    padding: 4rem 6% 2rem;
+  }
+  section.preOwned h3{
+    text-align: center;
+  }
+  
+  .preOwned  .preOwnedCars{
+    display: flex;
+    padding: 2rem 0 0;
+    flex-wrap: wrap;
+    gap: 2rem 1rem;
+    align-items: center;text-align: center;
+    justify-content: center;
+  }
+  .preOwned  .preOwnedCars .preOwnedCar .btn{
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+  }
+  .preOwned  .preOwnedCars .preOwnedCar{
+    box-shadow: 0 0 8px rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .preOwned  .preOwnedCars .preOwnedCar .details{
+    padding: .5rem  0 1.5rem;
+  }
+  .preOwned  .preOwnedCars .preOwnedCar .details div{
+    font-size: 2rem;  color: var(--main-color);    
+    padding-bottom:0.5rem;
+
+  }
+  .preOwned  .preOwnedCars .preOwnedCar .details p{
+    padding-bottom:0.9rem;
+  
+  }
+  .preOwned  .preOwnedCars .preOwnedCar img{
+    height: 20rem;
+    padding: 1rem;
+    width: 27rem;
+    object-position: center;
+  }
+
+  /* end of brand */
+/* end */
+
+
+/* footer */
+.footer {
+  padding: 3rem 1.4%;
+  background: rgb(0 , 0 , 0 , .9);
+}
+
+.footer-div{
+  width: 25%;
+  float: left;
+  padding: 10px;
+
+}
+
+.footer:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer .footer-div h2{
+  font-size: 2.7rem;
+}
+.footer .footer-div.main-div h2{
+  font-size: 3rem;
+  color: #fff;
+}
+
+.footer .footer-div.main-div h2>i{
+  padding-right: 1.4rem;
+  color: rgb(13, 177, 21);
+}
+
+.footer .footer-div.main-div p.title{
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  color: #eee;
+}
+
+.footer .footer-div.main-div p.Lorem1{
+  font-size: 1.5rem;
+  font-weight:300;
+  color:rgb(185, 185, 185);
+  letter-spacing: 1.3px;
+  padding-block: 1.7rem .8rem;
+}
+
+.footer .footer-div.main-div p.Lorem2{
+  font-size: 1.5rem;
+  font-weight:300;
+  color:rgb(185, 185, 185);
+  letter-spacing: 1.3px;
+}
+
+
+.footer .footer-div.main-div a {
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+.footer .footer-container .footer-div.main-div .socials {
+  padding: 1.3rem .5rem;
+}
+
+.footer .footer-container.main-div .social-link{
+  padding-block: 1.3rem .8rem !important;
+}
+
+.footer .footer-container .main-div .social-link > i{
+  padding-right: 1.1rem ;
+  padding-block: 1.7rem 1.3rem;
+  color: rgb(13, 177, 21);
+}
+
+.footer .footer-container .main-div a.social-link {
+  margin: 2.5rem 0 !important;
+  color: #fff;
+  /* padding-block: 1.7rem .3rem 0 .8rem; */
+}
+
+
+
+.footer .footer-container .main-div .social-links > i {
+  
+  font-size: 2.3rem;
+  background: rgb(13, 177, 21);
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+}
+
+.footer .footer-container .main-div .social-links {
+  padding-left: 1rem;
+}
+
+
+.footer .footer-div.info-div{
+  padding: 1.4rem 8%;
+  flex-basis: 25%;
+}
+
+.footer .footer-div.info-div h2{
+  line-height: 2;
+  letter-spacing: 1px;
+  color: #fff;
+  /* background: red; */
+}
+
+.footer .footer-div.info-div a{
+  display: block !important; 
+  line-height: 2.5;
+  border-width: 2.1px;
+  font-size: 1.7rem;
+  color: #eee;
+}
+
+.footer .footer-div.useful-div h2{
+  line-height: 2.3;
+  letter-spacing: 1.1px;
+  color: #fff;
+}
+
+
+.footer .footer-div.useful-div{
+  padding-left: 1.7rem;
+}
+
+
+.footer .footer-div.useful-div a {
+  display: block;
+  line-height: 2.7;
+  font-size: 1.7rem;
+  color: #eee !important;
+}
+
+.footer .footer-div.contact-div h2 {
+  letter-spacing: 1px;
+  line-height: 2.3;
+  letter-spacing: 1.1px;
+  color: #fff;
+}
+
+
+.footer .footer-div.contact-div a {
+  display: block ;
+  line-height: 2.7;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+.footer .footer-div.contact-div a>i{
+  padding-right: .9rem;
+}
 
 
 
 
+.footer .footer-div.contact-div>i{
+  color: rgb(13, 177, 21);
+  font-size: 2.4rem;
+  position: fixed;
+  right: 7.6%;
+  top: 28.7%;
+  width: 4rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  background: #181818;
+}
+
+.footer .footer-div.contact-div > button {
+  width:80%;
+  margin-top: 3rem;
+  padding: 2rem 9%;
+  border: 1px solid rgb(13, 177, 21);
+  background: #000000;
+  color: white;
+  font-weight: 200;
+}
+
+.footer .footer-div.contact-div > button:hover{
+  border: .1px dashed rgb(13, 177, 21);
+  background: #000000;
+  color: white;
+  transition: .4s ease-in-out;
+ 
+  
+}
 
 
+.footer .footer-div .link_:hover{
+  color: rgb(13, 177, 21);
+  padding-left: .5rem;
+  transition: .8s ease-in-out;
+}
 
+.footer .footer-div .social-links>i:hover{
+  background: #181818;
+  color: rgb(13, 177, 21);
+  border: 1px solid rgb(13, 177, 21);
+  transition: .2s all ease-in-out;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  padding-left: 1rem;
+}
 
   /* end of footer */
 
@@ -555,7 +826,6 @@ gap: 2%;
 }
 .homeHero .image img{
   height: 60vh;
-  /* object-fit:contain; */
 }
 .Contactcontainer .content{
   flex-direction: column;
@@ -564,9 +834,21 @@ gap: 2%;
 height: 30rem;
 border-radius: 1rem;
 }
-
+.coming-soon .soonCar img{
+height: 30rem;
+}
 .Contactcontainer{
   height: 100vh;
+}
+#preownedCars{
+  flex-direction: column;
+
+}
+#preownedCars  .content{
+  padding-top: 2rem;
+}
+#preownedCars .image img{
+  height: 60vh;
 }
 } 
 
@@ -621,6 +903,25 @@ color: var(--main-color);
       .aboutMain .content{
         width: 60%;
       }
+      .footer-div{
+        width: 100%;
+    }
+    .footer{
+        height: auto;
+    }
+  
+    .footer .footer-div.useful-div{
+      width:25%;
+    }
+  
+    .footer .footer-div.info-div{
+        padding: .3rem 5%;
+        width: 29%;
+    }
+  
+    .footer .footer-div.contact-div{
+        width: 45%;
+    }
 }
 /* end */
   @media (max-width:770px) {
@@ -628,6 +929,12 @@ color: var(--main-color);
         font-size: 52%;
     } .homeHero .image img{
       height: 40vh;
+    }
+    .comingSoonContainer .coming-soon{
+      flex-direction: column;
+    }
+    .coming-soon .soonCar img{
+    height: 50rem;
     }
     .aboutMain .content{
       width: 80%;
@@ -662,6 +969,29 @@ color: var(--main-color);
       padding: .5rem 0 1rem;
       color:rgb(0, 0, 0,.6);
     } 
+    .footer .footer-div.useful-div{
+      width:50%;
+      height: auto;
+    }
+
+    .footer .footer-div.useful-div h2{
+          line-height: 1.3;
+    }
+
+    .footer .footer-div.info-div{
+        padding: .3rem 5%;
+        width: 50%;
+    }
+
+    .footer .footer-div.contact-div{
+        width: 100%;
+        text-align: center;
+      }
+      
+      .footer .footer-div.contact-div>input {
+          width: 100%;
+          text-align: center;
+    }
   }
   @media (max-width:426px) {
     html{
