@@ -592,9 +592,65 @@ transform: translateX(0);
     width: 27rem;
     object-position: center;
   }
-
-  /* end of brand */
 /* end */
+/* brands */
+#brands,#ranges{
+  padding: 2rem 6%;
+}
+#brands h3,#ranges h3{
+  text-align: center;
+}
+#brands .brandContainer .buttons,
+#ranges .rangeContainer .buttons{
+display: flex;
+width: 100%;
+gap:1rem;
+padding: 1rem 0;
+justify-content: center;
+}
+#brands .brandContainer .buttons .filter-btn,
+#ranges .rangeContainer .buttons .filter-btn{
+	padding: .8rem 2rem;
+  border-radius: .7rem;
+}
+#brands .brandContainer .buttons .filter-btn:hover,
+#ranges .rangeContainer .buttons .filter-btn:hover{
+  color: white;
+}
+#brands .brandContainer .buttons .filter-btn.active,
+#ranges .rangeContainer .buttons .filter-btn.active{
+background: var(--main-color);
+color: white;
+}
+/* ranges */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer */
@@ -1015,5 +1071,8 @@ padding:0 2rem 0 3rem;
     }
     .Contactcontainer .content .map iframe{
       width: 40rem;
-      } 
+      }
+      #brands .brandContainer .buttons .filter-btn{
+        padding: .8rem 1rem;
+font-size: 2rem;      }
   }

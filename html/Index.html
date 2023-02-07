@@ -20,8 +20,8 @@
 <div class="LinkContainer">
      <a href="./Index.html" class="active homeLink">Home</a>
      <a href="./about.html">About Us</a>
-        <a href="#range" class="brandLink">Brands</a>
-        <a href="" class="rangeLink">Range of Cars</a>
+        <a href="#brands" class="brandLink">Brands</a>
+        <a href="#ranges" class="rangeLink">Range of Cars</a>
         <a href="./Preowned.html" class="ownedCarLink">PreOwned Cars</a>
         <a href="./Contact.html" class="contactLink">Contact Us</a>
 </div>
@@ -43,97 +43,32 @@
 <div class="image">
     <img src="../img/banner/car (1).png" alt="Benz car">
 </div>
-</div>    
-
+</div>   
     </section>
-  <!-- brands -->
-    <!-- <section class="preOwned" id="range">
-        <h2>PreOwnedCars</h2>
-        <div class="preOwnedCars">
-            <div class="preOwnedCar">
-                <div class="img">
-                    <img src="../img/cars/brandCars (1).jpg" alt="rangingCars">
-                </div>
-                <div class="details">
-                    <button class="btn">Buy Now</button>
-                </div>
-            </div>
-            <div class="preOwnedCar">
-                <div class="img">
-                   <img src="../img/cars/brandCars (2).jpg" alt="rangingCars"> 
-                </div>
-                <div class="details">
-                    <button class="btn">Buy Now</button>
-                </div>
-            </div>
-            <div class="preOwnedCar">
-                <div class="img">
-                    <img src="../img/cars/brandCars (3).jpg" alt="rangingCars">
-                </div>
-                <div class="details">
-                    <button class="btn">Buy Now</button>
-                </div>
-            </div>
-            <div class="preOwnedCar">
-                <div class="img">
-                    <img src="../img/cars/brandCars (4).jpg" alt="rangingCars">
-                </div>
-                <div class="details">
-                    <button class="btn">Buy Now</button>
-                </div>
-            </div>
-            <div class="preOwnedCar">
-                <div class="img">
-                    <img src="../img/cars/brandCars (5).jpg" alt="rangingCars">
-                </div>
-                <div class="details">
-                    <button class="btn">Buy Now</button>
-                </div>
-            </div>
-                <div class="preOwnedCar">
-                    <div class="img">
-                        <img src="../img/cars/img-2.jpg" alt="rangingCars">
-                    </div>
-                    <div class="details">
-                        <button class="btn">Buy Now</button>
-                    </div>
-                </div>
-                <div class="preOwnedCar">
-                    <div class="img">
-                        <img src="../img/cars/brandCars (7).jpg" alt="rangingCars">
-                    </div>
-                    <div class="details">
-                        <button class="btn">Buy Now</button>
-                    </div>
-                </div>
-                <div class="preOwnedCar">
-                    <div class="img">
-                        <img src="../img/cars/brandCars (8).jpg" alt="rangingCars">
-                    </div>
-                    <div class="details">
-                        <button class="btn">Buy Now</button>
-                    </div>
-                </div>
-                <div class="preOwnedCar">
-                    <div class="img">
-                        <img src="../img/cars/brandCars (9).jpg" alt="rangingCars">
-                    </div>
-                    <div class="details">
-                        <button class="btn">Buy Now</button>
-                    </div>
-                </div>
-                <div class="preOwnedCar">
-                    <div class="img">
-                        <img src="../img/cars/car-1.jpg" alt="rangingCars">
-                    </div>
-                    <div class="details">
-                        <button class="btn">Buy Now</button>
-                    </div>
-                </div>
+<section id="brands">
+    <h3>Our Car Brands</h3>
+    <div class="brandContainer">
+<div class="buttons">
+<button class="filter-btn btn active">All</button>
+<button class="filter-btn btn">Benz</button>
+<button class="filter-btn btn">Tesla</button>
+<button class="filter-btn btn">Audi</button>
+<button class="filter-btn btn">Porsche</button>
+</div>
+    </div>
+</section>
+<section id="ranges">
+<h3>Range Of Cars</h3>
+<div class="rangeContainer">
+    <div class="buttons">
+    <button class="filter-btn btn active">All</button>
+    <button class="filter-btn btn">Car</button>
+    <button class="filter-btn btn">Sedan</button>
+    <button class="filter-btn btn">Van</button>
+    <button class="filter-btn btn">Jeep</button>
+    </div>
         </div>
-    </section> -->
-
-
+</section>
 
 
       <!-- FOOTER Start -->
@@ -192,17 +127,18 @@
     <!-- FOOTER End -->
  
     <script src="./../script/script.js"></script>
-    <!-- <script>
+    <script>
         $(window).scroll(function(){
       if($(window).scrollTop() > 550){
-$('.ownedCarLink').addClass('active').siblings().removeClass('active')
+$('.brandLink').addClass('active').siblings().removeClass('active')
       }
       else{
-        $('.ownedCarLink').removeClass('active')
+        $('.brandLink').removeClass('active')
         $('.homeLink').addClass('active')
 
       }
     })
-    </script>  -->
+    
+    </script> 
 </body>
 </html>

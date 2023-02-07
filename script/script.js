@@ -48,6 +48,5 @@ let hoursItem = document.querySelector("#hour");
     countDown()   
     setInterval(countDown, 1000)
 
-// countdown sect
 
 })
