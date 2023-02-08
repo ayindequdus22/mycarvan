@@ -726,6 +726,45 @@ color: white;
 .brandCarContainer .brandCar.active{
   animation: fadeUp .4s linear; 
   transition: all 2s ease;
+}  
+.brandContainer .brandCarContainer .brandCar,
+#ranges .rangeContainer .rangeCar{
+  position: relative;
+  overflow: hidden;
+}
+.myIcons{
+  font-size: 2rem;
+   line-height: 4rem !important;
+    position: absolute;
+    width: 4rem;
+    text-align: center;
+    border-radius: 100%;
+    top: 1.5rem;
+    color: white;
+    cursor: pointer;
+    background: rgb(51, 51, 51,.8);
+  transition: all 1s ease;
+}
+.brandCarContainer .brandCar:hover .myIcons.myIcon1,
+#ranges .rangeContainer .rangeCar:hover .myIcons.myIcon1{
+left: 2rem;
+}
+.brandCarContainer .brandCar:hover .myIcons.myIcon2,
+#ranges .rangeContainer .rangeCar:hover .myIcons.myIcon2
+{
+ 
+right: 2rem;
+}
+.myIcons:hover{
+  background: var(--main-color);
+  transition: all 1s ease;
+}
+.myIcons.myIcon1{
+  left: -4rem;
+}
+
+.myIcons.myIcon2{
+  right: -4rem;
 }
 @keyframes fadeUp {
   0% {
