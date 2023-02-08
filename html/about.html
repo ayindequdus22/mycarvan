@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>   
      <link rel="stylesheet" href="./../style/style.css">
-    <!-- <link rel="stylesheet" href="/Poppins-Regular.ttf">  -->
-    <script src="../script/jquery.js"></script>
-    <!-- <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css"> -->
-   <!-- <script src="/jquery.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
+  <div class="topCar">
+    <div class="fa fa-chevron-up UpBtn"></div>
+    <div class="fa fa-chevron-down DownBtn"></div>
+        </div>
     <nav class="nav">
-        <a href="./Index.html">Carvan</a>
+        <a href="./Index.html"><div class="fa fa-car-alt" style="color:var(--main-color)"></div> Carvan</a>
     <div class="LinkContainer">
          <a href="./Index.html" class="homeLink">Home</a>
          <a href="./about.html"class="active aboutLink">About Us</a>
@@ -50,7 +50,7 @@
     </section>
     <section class="aboutEmployeees">
         <h3>Our Skillful Engineers</h3>
-        <div class="aboutEnginnerContainer">
+        <div class="aboutEnginnerContainer" id="engineer">
             <div class="aboutEngineer">           
               <div class="imageSocials">
                <div class="image">
@@ -153,20 +153,20 @@
         <div class="clock">
           <div class="timing">
             <div class="box">
-              <h3 id="day">00</h3>
+              <h4 id="day">00</h4>
               <span>days</span>
             </div>
             <div class="box">
-              <h3 id="hour">00</h3>
+              <h4 id="hour">00</h4>
            <span>hours</span>
             </div>
             <div class="box">
-              <h3 id="minute">00</h3>
-           <span>minutes</span>
+              <h4 id="minute">00</h4>
+           <span>mins</span>
             </div>
             <div class="box">
-              <h3 id="second">00</h3>
-           <span>seconds</span>
+              <h4 id="second">00</h4>
+           <span>secs</span>
             </div>
           </div>
         <button class="btn">See More</button>
@@ -176,63 +176,58 @@
     </section>
     
 </main>
-      <!-- FOOTER Start -->
-
-      <footer class="footer" id="footer">
-        <div class="footer-container">
-          <div class="footer-div main-div">
-            <h2><i class="fa fa-car-alt"></i> Carvan</h2>
-            <p class="title">The World's most Trusted Automotive Site</p>
-            <p class="Lorem1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elite dolore.
-              Minima nam aliquid ialiquid id libertas!
-            </p>
-            <a href="" class="social-link"
-              ><i class="fas fa-map-marker-alt"></i>1213, Lang-Ford driveWay ,
-              California, United States.</a
-            >
-            <br />
-            <div class="socials">
-              <a href="" class="social-links"><i class="fab fa-twitter"></i></a>
-              <a href="" class="social-links"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="" class="social-links"><i class="fab fa-instagram"></i></a>
-              <a href="" class="social-links"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div>
-          </div>
-  
-          <div class="footer-div info-div grid-1">
-            <h2>Info Links</h2>
-            <a href="Index.html" class="link_">Home</a>
-            <a href="" class="link_">Products</a>
-            <a href="about.html" class="link_">About Us</a>
-            <a href="" class="link_">Contact</a>
-            <a href="" class="link_">Services</a>
-          </div>
-  
-          <div class="footer-div useful-div grid-2">
-            <h2>Useful Links</h2>
-            <a href="" class="link_">Privacy Policy</a>
-            <a href="" class="link_">Terms & Conditions</a>
-            <a href="" class="link_">Support </a>
-          </div>
-  
-          <div class="footer-div contact-div grid-3">
-            <h2>Contact Us</h2>
-            <a href=""><i class="fa fa-envelope"></i> info@Carvan.com</a>
-            <a href=""><i class="fa fa-phone"></i> +1 (301) 3 234547</a>
-            <button>Subscribe For More In...</button>
+     <!-- FOOTER Start -->
+     <footer class="footer" id="footer">
+      <div class="footer-container">
+        <div class="footer-div main-div">
+          <h2><i class="fa fa-car-alt"></i> Carvan</h2>
+          <p class="title">The World's most Trusted Automotive Site</p>
+          <p class="Lorem1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elite dolore.
+            Minima nam aliquid ialiquid id libertas!
+          </p>
+          <a href="" class="social-link"
+            ><i class="fas fa-map-marker-alt"></i>1213, Lang-Ford driveWay ,
+            California, United States.</a
+          >
+          <br />
+          <div class="socials">
+            <a href="" class="social-links"><i class="fab fa-twitter"></i></a>
+            <a href="" class="social-links"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="" class="social-links"><i class="fab fa-instagram"></i></a>
+            <a href="" class="social-links"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
         </div>
-      </footer>
 
-    <!-- FOOTER End -->
+        <div class="footer-div info-div grid-1">
+          <h2>Info Links</h2>
+          <a href="./Index.html" class="link_">Home</a>
+          <a href="./Preowned.html" class="link_">PreOwnedCars</a>
+          <a href="./about.html" class="link_">About Us</a>
+          <a href="./Contact.html" class="link_">Contact</a>
+          <a href="./about.html#engineer" class="link_">Engineers</a>
+        </div>
 
+        <div class="footer-div useful-div grid-2">
+          <h2>Useful Links</h2>
+          <a href="" class="link_">Privacy Policy</a>
+          <a href="" class="link_">Terms & Conditions</a>
+          <a href="" class="link_">Support </a>
+        </div>
 
-
+        <div class="footer-div contact-div grid-3">
+          <h2>Contact Us</h2>
+          <a href=""><i class="fa fa-envelope"></i> info@Carvan.com</a>
+          <a href=""><i class="fa fa-phone"></i> +1 (301) 3 234547</a>
+          <button>Subscribe For More In...</button>
+        </div>
+      </div>
+    </footer>
+<!-- footer end -->
 
 
 

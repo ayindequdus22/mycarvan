@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="./../style/style.css">
-    <link rel="stylesheet" href="/Poppins-Regular.ttf"> 
-    <script src="../script/jquery.js"></script>
-    <link rel="stylesheet" href="../fontawesome-free-6.2.1-web/fontawesome-free-6.2.1-web/css/all.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
+  <div class="topCar">
+    <div class="fa fa-chevron-up UpBtn"></div>
+    <div class="fa fa-chevron-down DownBtn"></div>
+        </div>
     <nav class="nav">
-        <a href="#">Carvan</a>
+        <a href="./Index.html"><div class="fa fa-car-alt" style="color:var(--main-color)"></div> Carvan</a>
     <div class="LinkContainer">
         <a href="./Index.html" class="homeLink">Home</a>
         <a href="./about.html"class="aboutLink">About Us</a>
@@ -33,22 +34,22 @@
         </nav>
 <section class="Contactcontainer">
     <div class="contactImage">
-        <img src="../img/contactus/img-6.jpg" alt="">
+        <img src="../img/contactus/img-6.jpg" alt="contactImage">
     </div>
     <div class="content">
-     <form action="mailto:{email address}" method="post" enctype="text/plain">
+     <form action="mailto:carvan@gmail.com" method="post" enctype="text/plain">
         <div class="names contactFlex">
-        <input type="text" name="" placeholder="First Name" id="">
-        <input type="text" placeholder="Last Name">    
+        <input type="text" name="" required placeholder="First Name" id="">
+        <input type="text" required placeholder="Last Name">    
         </div>
        <div class="mail">
-        <input type="email" name="" placeholder="E-mail" id="">
+        <input type="email" required name="" placeholder="E-mail" id="">
        </div>
        <div class="contactFlex">
-        <input type="number" name="" placeholder="Your Number" id="">
+        <input type="number" name="" required placeholder="Your Number" id="">
         <input type="text" placeholder="Subject">    
         </div> 
-        <textarea name="" id=""  placeholder="Your Message"></textarea>
+        <textarea name="" required id=""  placeholder="Your Message"></textarea>
     <button class="btn">Submit Now</button> 
     </form>
         <div class="map">
@@ -58,7 +59,6 @@
 </section>
 
       <!-- FOOTER Start -->
-
       <footer class="footer" id="footer">
         <div class="footer-container">
           <div class="footer-div main-div">
@@ -87,11 +87,11 @@
   
           <div class="footer-div info-div grid-1">
             <h2>Info Links</h2>
-            <a href="Index.html" class="link_">Home</a>
-            <a href="" class="link_">Products</a>
-            <a href="about.html" class="link_">About Us</a>
-            <a href="" class="link_">Contact</a>
-            <a href="" class="link_">Services</a>
+            <a href="./Index.html" class="link_">Home</a>
+            <a href="./Preowned.html" class="link_">PreOwnedCars</a>
+            <a href="./about.html" class="link_">About Us</a>
+            <a href="./Contact.html" class="link_">Contact</a>
+            <a href="./about.html#engineer" class="link_">Engineers</a>
           </div>
   
           <div class="footer-div useful-div grid-2">
@@ -109,8 +109,7 @@
           </div>
         </div>
       </footer>
-
-    <!-- FOOTER End -->
+<!-- footer end -->
         <script src="./../script/script.js"></script>
     </body>
 </html>
