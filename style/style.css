@@ -431,7 +431,7 @@ cursor: pointer;
 /* end of about us */
 /* contact page */
 .Contactcontainer{
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   align-items: center;
@@ -446,7 +446,7 @@ content: '';
 position: absolute;
 height: inherit;
 width: inherit;
-background: rgb(0, 0, 0,.2);
+background: rgb(0, 0, 0,.5);
 }
 .Contactcontainer .contactImage{
     height: inherit;
@@ -692,12 +692,12 @@ transform: translateX(0);
     object-position: center;
   }
 /* end */
-/* brands */
+/* brands and brands */
 #brands,#ranges{
   padding: 3rem 6%;
 }
 #brands h3,#ranges h3{
-  text-align: center;
+  text-align: center;color: var(--main-color);
 }
 #brands .brandContainer .buttons,
 #ranges .rangeContainer .buttons{
@@ -1059,7 +1059,7 @@ height: 30rem;
 } 
 
 /* responsiveness for nav */
-@media(max-width:996px){
+@media(max-width:999px){
     html{
         font-size: 57.5%;
     }
