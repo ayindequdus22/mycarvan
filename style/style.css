@@ -10,6 +10,7 @@
   overflow-x: hidden;
   scroll-behavior:smooth;
   }
+  
   body{
      font-family: 'Poppins',sans-serif !important;
       position: relative;
@@ -175,7 +176,7 @@ box-shadow: 2px 2px 8px rgba(0,0,0,.2);
  background-color: #eeeeee;
     padding: 1.5rem initial;
     height: 7vh;
-    transition: all 2s ease-out;
+    transition: all 2s ease;
 
   }
 
